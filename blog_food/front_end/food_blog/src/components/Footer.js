@@ -1,7 +1,127 @@
+import OwlCarousel from "react-owl-carousel";
 
 export function Footer(){
     return(
         <>
+            <OwlCarousel className="instargram_area owl-carousel section_padding_100_0 clearfix" id="portfolio"
+                         items={6} loop autoplay
+                         responsive={{
+                             0: {
+                                 items: 2
+                             },
+                             600: {
+                                 items: 4
+                             },
+                             1000: {
+                                 items: 6
+                             }
+                         }}>
+
+                <div className="instagram_gallery_item">
+                    <img src="/img/instagram-img/1.jpg" alt=""/>
+                    <div className="hover_overlay">
+                        <div className="yummy-table">
+                            <div className="yummy-table-cell">
+                                <div className="follow-me text-center">
+                                    <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="instagram_gallery_item">
+                    <img src="/img/instagram-img/2.jpg" alt=""/>
+                    <div className="hover_overlay">
+                        <div className="yummy-table">
+                            <div className="yummy-table-cell">
+                                <div className="follow-me text-center">
+                                    <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="instagram_gallery_item">
+                    <img src="/img/instagram-img/3.jpg" alt=""/>
+                    <div className="hover_overlay">
+                        <div className="yummy-table">
+                            <div className="yummy-table-cell">
+                                <div className="follow-me text-center">
+                                    <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="instagram_gallery_item">
+                    <img src="/img/instagram-img/4.jpg" alt=""/>
+                    <div className="hover_overlay">
+                        <div className="yummy-table">
+                            <div className="yummy-table-cell">
+                                <div className="follow-me text-center">
+                                    <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="instagram_gallery_item">
+                    <img src="/img/instagram-img/5.jpg" alt=""/>
+                    <div className="hover_overlay">
+                        <div className="yummy-table">
+                            <div className="yummy-table-cell">
+                                <div className="follow-me text-center">
+                                    <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="instagram_gallery_item">
+                    <img src="/img/instagram-img/6.jpg" alt=""/>
+                    <div className="hover_overlay">
+                        <div className="yummy-table">
+                            <div className="yummy-table-cell">
+                                <div className="follow-me text-center">
+                                    <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="instagram_gallery_item">
+                    <img src="/img/instagram-img/1.jpg" alt=""/>
+                    <div className="hover_overlay">
+                        <div className="yummy-table">
+                            <div className="yummy-table-cell">
+                                <div className="follow-me text-center">
+                                    <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="instagram_gallery_item">
+                    <img src="/img/instagram-img/2.jpg" alt=""/>
+                    <div className="hover_overlay">
+                        <div className="yummy-table">
+                            <div className="yummy-table-cell">
+                                <div className="follow-me text-center">
+                                    <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </OwlCarousel>
             <div className="social_icon_area clearfix">
                 <div className="container">
                     <div className="row">

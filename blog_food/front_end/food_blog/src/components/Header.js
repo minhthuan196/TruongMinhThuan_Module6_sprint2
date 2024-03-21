@@ -1,9 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Link} from "react-router-dom";
 export function Header() {
     return (
         <>
-            <div id="preloader">
-                <div className="yummy-load"></div>
-            </div>
+            {/*<div id="preloader">*/}
+            {/*    <div className="yummy-load"></div>*/}
+            {/*</div>*/}
 
             <div className="top_header_area">
                 <div className="container">
@@ -21,7 +23,7 @@ export function Header() {
                             <div className="signup-search-area d-flex align-items-center justify-content-end">
                                 <div className="login_register_area d-flex">
                                     <div className="login">
-                                        <a href="#">Đăng nhập</a>
+                                        <Link to={"/login"}>Đăng nhập</Link>
                                     </div>
                                     <div className="register">
                                         <a href="#">Đăng kí</a>
@@ -48,7 +50,7 @@ export function Header() {
                     <div className="row">
                         <div className="col-12">
                             <div className="logo_area text-center">
-                                <a href="#" className="yummy-logo">Noel Blog</a>
+                                <Link to={"/"} className="yummy-logo">Noel Blog</Link>
                             </div>
                         </div>
                     </div>
@@ -60,17 +62,10 @@ export function Header() {
                                 <div className="collapse navbar-collapse justify-content-center" id="yummyfood-nav">
                                     <ul className="navbar-nav" id="yummy-nav">
                                         <li className="nav-item active">
-                                            <a className="nav-link" href="#">Trang chủ <span className="sr-only">(current)</span></a>
+                                            <Link to={"/"} className="nav-link">Trang chủ <span className="sr-only">(current)</span></Link>
                                         </li>
-                                        <li className="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle" href="#" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Công thức nấu ăn</a>
-                                            <div className="dropdown-menu" aria-labelledby="yummyDropdown">
-                                                <a className="dropdown-item" href="#">Khai vị</a>
-                                                <a className="dropdown-item" href="#">Đồ ăn sáng</a>
-                                                <a className="dropdown-item" href="#">Món chính</a>
-                                                <a className="dropdown-item" href="#">Tráng miệng</a>
-                                                <a className="dropdown-item" href="#">Đồ uống</a>
-                                            </div>
+                                        <li className="nav-item">
+                                            <Link to={"/blog"} className="nav-link">Công thức nấu ăn</Link>
                                         </li>
                                         <li className="nav-item">
                                             <a className="nav-link" href="#">Dụng cụ bếp</a>
@@ -82,7 +77,7 @@ export function Header() {
                                             <a className="nav-link" href="#">Sách nấu ăn</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Liên hệ</a>
+                                            <Link to={"/contact"} className="nav-link">Liên hệ</Link>
                                         </li>
                                     </ul>
                                 </div>
