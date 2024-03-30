@@ -22,7 +22,7 @@ export function ListBlog(){
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb">
                                     <li className="breadcrumb-item"><a href="#"><i className="fa fa-home" aria-hidden="true"></i>Trang chủ</a></li>
-                                    <li className="breadcrumb-item active" aria-current="page">Công thức</li>
+                                    <li className="breadcrumb-item" aria-current="page">Công thức</li>
                                 </ol>
                             </nav>
                         </div>

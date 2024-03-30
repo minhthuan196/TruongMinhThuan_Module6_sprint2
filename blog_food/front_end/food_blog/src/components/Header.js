@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 export function Header() {
     return (
         <>
@@ -61,11 +61,11 @@ export function Header() {
                                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#yummyfood-nav" aria-controls="yummyfood-nav" aria-expanded="false" aria-label="Toggle navigation"><i className="fa fa-bars" aria-hidden="true"></i> Menu</button>
                                 <div className="collapse navbar-collapse justify-content-center" id="yummyfood-nav">
                                     <ul className="navbar-nav" id="yummy-nav">
-                                        <li className="nav-item active">
-                                            <Link to={"/"} className="nav-link">Trang chủ <span className="sr-only">(current)</span></Link>
+                                        <li className="nav-item">
+                                            <NavLink to={"/"} className="nav-link">Trang chủ</NavLink>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to={"/blog"} className="nav-link">Công thức nấu ăn</Link>
+                                            <NavLink to={"/blog"} className="nav-link">Công thức nấu ăn</NavLink>
                                         </li>
                                         <li className="nav-item">
                                             <a className="nav-link" href="#">Dụng cụ bếp</a>
@@ -77,7 +77,7 @@ export function Header() {
                                             <a className="nav-link" href="#">Sách nấu ăn</a>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to={"/contact"} className="nav-link">Liên hệ</Link>
+                                            <NavLink to={"/contact"} className="nav-link">Liên hệ</NavLink>
                                         </li>
                                     </ul>
                                 </div>

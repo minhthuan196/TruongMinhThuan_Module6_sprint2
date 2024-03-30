@@ -22,7 +22,8 @@ public class Post {
     @Column(columnDefinition = "LONGTEXT")
     private String ingredient;
     @Column(columnDefinition = "LONGTEXT")
-    private String Making;
+    private String making;
+    private Integer likes;
     @Column(columnDefinition = "boolean default false")
     private Boolean isDeleted = false;
 
@@ -38,7 +39,7 @@ public class Post {
         this.introduce = introduce;
         this.introducePicture = introducePicture;
         this.ingredient = ingredient;
-        Making = making;
+        making = making;
         this.isDeleted = isDeleted;
     }
 
@@ -107,10 +108,10 @@ public class Post {
     }
 
     public String getMaking() {
-        return Making;
+        return making;
     }
 
     public void setMaking(String making) {
-        Making = making;
+        making = making;
     }
 }

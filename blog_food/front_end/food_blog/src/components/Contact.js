@@ -23,7 +23,7 @@ export function Contact(){
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb">
                                     <li className="breadcrumb-item"><a href="#"><i className="fa fa-home" aria-hidden="true"></i>Trang chủ</a></li>
-                                    <li className="breadcrumb-item active" aria-current="page">Liên hệ chúng tôi</li>
+                                    <li className="breadcrumb-item" aria-current="page">Liên hệ chúng tôi</li>
                                 </ol>
                             </nav>
                         </div>
@@ -58,8 +58,7 @@ export function Contact(){
                     <div className="contact-form-area">
                         <div className="row">
                             <div className="col-12 col-md-5">
-                                <div className="contact-form-sidebar item wow fadeInUpBig" style={{backgroundImage:"url(/img/bg-img/slide-1.jpg)"}}>
-                                </div>
+                                <img src={"/img/bg-img/contact.jpg"} alt=""/>
                             </div>
                             <div className="col-12 col-md-7 item">
                                 <div className="contact-form wow fadeInUpBig" data-wow-delay="0.6s">

@@ -8,7 +8,7 @@ import java.time.LocalDate;
 public class User {
         @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     @Column(columnDefinition = "VARCHAR(100)",nullable = false)
     private String fullName;
     @OneToOne
@@ -30,7 +30,7 @@ public class User {
     @Column(columnDefinition = "boolean default false")
     private Boolean isDeleted = false;
 
-    public User(Long id, String fullName, Account account, String phone, String email, String address,
+    public User(Integer id, String fullName, Account account, String phone, String email, String address,
                 String avatar, LocalDate birthday, Boolean gender, UserType userType, Boolean isDeleted) {
         this.id = id;
         this.fullName = fullName;
@@ -48,11 +48,11 @@ public class User {
     public User() {
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

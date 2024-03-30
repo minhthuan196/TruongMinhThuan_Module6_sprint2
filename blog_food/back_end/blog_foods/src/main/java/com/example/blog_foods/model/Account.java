@@ -11,20 +11,17 @@ public class Account {
     private Integer id;
     @Column(columnDefinition = "VARCHAR(50)",nullable = false)
     private String username;
-    @Column(columnDefinition = "VARCHAR(50)",nullable = false)
+    @Column(columnDefinition = "VARCHAR(250)",nullable = false)
     private String password;
-    @ManyToOne
-    @JoinColumn(name = "role_id", referencedColumnName = "id")
-    private Role role;
+
 
     public Account() {
     }
 
-    public Account(Integer id, String username, String password, Role role) {
+    public Account(Integer id, String username, String password) {
         this.id = id;
         this.username = username;
         this.password = password;
-        this.role = role;
     }
 
     public Integer getId() {
@@ -51,11 +48,5 @@ public class Account {
         this.password = password;
     }
 
-    public Role getRole() {
-        return role;
-    }
 
-    public void setRole(Role role) {
-        this.role = role;
-    }
 }

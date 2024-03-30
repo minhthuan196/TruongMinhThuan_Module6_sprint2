@@ -461,6 +461,9 @@ li {
 .navbar.navbar-expand-lg .navbar-nav .active .nav-link {
     color: #fc6c3f;
 }
+.navbar.navbar-expand-lg .navbar-nav .nav-link .active {
+    color: #fc6c3f;
+}
 
 .dropdown-item {
     font-weight: 500;
@@ -1182,6 +1185,10 @@ li {
 .contact-btn:hover {
     color: #fff;
     background-color: #d43f10;
+}
+
+.active{
+    color: #fc6c3f !important;
 }
 
 .contact-form-sidebar {
